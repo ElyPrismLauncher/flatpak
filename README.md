@@ -1,6 +1,6 @@
-# org.prismlauncher.PrismLauncher
+# io.github.elyprismlauncher.ElyPrismLauncher
 
-A flatpak for [PrismLauncher](https://github.com/PrismLauncher/PrismLauncher)
+A flatpak for [ElyPrismLauncher](https://github.com/ElyPrismLauncher/ElyPrismLauncher)
 Please see upstream README for more information.
 
 ## FAQ

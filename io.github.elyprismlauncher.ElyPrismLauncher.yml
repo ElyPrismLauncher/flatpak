@@ -1,11 +1,11 @@
-id: org.prismlauncher.PrismLauncher
+id: io.github.elyprismlauncher.ElyPrismLauncher
 runtime: org.kde.Platform
 runtime-version: '6.10'
 sdk: org.kde.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk17
 
-command: prismlauncher
+command: elyprismlauncher
 finish-args:
   - --share=ipc
   - --socket=x11
@@ -37,7 +37,7 @@ modules:
   # /w patch for pipewire
   - flite.json
 
-  - name: prismlauncher
+  - name: elyprismlauncher
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
@@ -51,13 +51,13 @@ modules:
         JAVA_COMPILER: /usr/lib/sdk/openjdk17/jvm/openjdk-17/bin/javac
     sources:
       - type: archive
-        url: https://github.com/PrismLauncher/PrismLauncher/releases/download/10.0.2/PrismLauncher-10.0.2.tar.gz
+        url: https://github.com/ElyPrismLauncher/ElyPrismLauncher/releases/download/10.0.2/ElyPrismLauncher-10.0.2.tar.gz
         sha256: 4b36e8b0345a21a9a8da36633fa5bf4d8f44d992da1529cdfb6bf52a0ff7f33c
         x-checker-data:
           type: json
-          url: https://api.github.com/repos/PrismLauncher/PrismLauncher/releases/latest
+          url: https://api.github.com/repos/ElyPrismLauncher/ElyPrismLauncher/releases/latest
           version-query: .tag_name
-          url-query: .assets[] | select(.name == "PrismLauncher-" + $version + ".tar.gz")
+          url-query: .assets[] | select(.name == "ElyPrismLauncher-" + $version + ".tar.gz")
             | .browser_download_url
 
   - name: glfw
@@ -153,10 +153,10 @@ modules:
     buildsystem: simple
     build-commands:
       - install -Dm755 prime-run /app/bin/prime-run
-      - mv /app/bin/prismlauncher /app/bin/prismrun
-      - install -Dm755 prismlauncher /app/bin/prismlauncher
+      - mv /app/bin/elyprismlauncher /app/bin/elyprismrun
+      - install -Dm755 elyprismlauncher /app/bin/elyprismlauncher
     sources:
       - type: file
         path: prime-run
       - type: file
-        path: prismlauncher
+        path: elyprismlauncher
