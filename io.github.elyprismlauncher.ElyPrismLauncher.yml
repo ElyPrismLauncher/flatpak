@@ -52,7 +52,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/ElyPrismLauncher/ElyPrismLauncher/releases/download/10.0.2/ElyPrismLauncher-10.0.2.tar.gz
-        sha256: 4b36e8b0345a21a9a8da36633fa5bf4d8f44d992da1529cdfb6bf52a0ff7f33c
+        sha256: 1ef1cb1e50433d64a93dc0269e2be57ef910017892c815076c1c37dfe0e39fbb
         x-checker-data:
           type: json
           url: https://api.github.com/repos/ElyPrismLauncher/ElyPrismLauncher/releases/latest
