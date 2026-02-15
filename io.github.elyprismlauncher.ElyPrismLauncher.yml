@@ -51,8 +51,8 @@ modules:
         JAVA_COMPILER: /usr/lib/sdk/openjdk17/jvm/openjdk-17/bin/javac
     sources:
       - type: archive
-        url: https://github.com/ElyPrismLauncher/ElyPrismLauncher/releases/download/10.0.2/ElyPrismLauncher-10.0.2.tar.gz
-        sha256: 1ef1cb1e50433d64a93dc0269e2be57ef910017892c815076c1c37dfe0e39fbb
+        url: https://github.com/ElyPrismLauncher/ElyPrismLauncher/releases/download/10.0.5/ElyPrismLauncher-10.0.5.tar.gz
+        sha256: 87bc4394fed3b295663c84b5996e31f43384cb04b350c56bbcf038847df3a2b1
         x-checker-data:
           type: json
           url: https://api.github.com/repos/ElyPrismLauncher/ElyPrismLauncher/releases/latest
