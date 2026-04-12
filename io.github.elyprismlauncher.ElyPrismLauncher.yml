@@ -51,8 +51,8 @@ modules:
         JAVA_COMPILER: /usr/lib/sdk/openjdk17/jvm/openjdk-17/bin/javac
     sources:
       - type: archive
-        url: https://github.com/ElyPrismLauncher/ElyPrismLauncher/releases/download/11.0.0/PineconeMC-11.0.0.tar.gz
-        sha256: d70e91f3b2d8344f1c652e7c2483f25b54e4b95c1816eba1b1990310d4a8a8f6
+        url: https://github.com/ElyPrismLauncher/ElyPrismLauncher/releases/download/11.0.2/PineconeMC-11.0.2.tar.gz
+        sha256: 66ff781fc3fa74a35079675c142b5007dd727df9e00dc36f9b94a21ef356516e
         x-checker-data:
           type: json
           url: https://api.github.com/repos/ElyPrismLauncher/ElyPrismLauncher/releases/latest
